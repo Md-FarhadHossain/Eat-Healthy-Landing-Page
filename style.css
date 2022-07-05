@@ -183,6 +183,12 @@ a.btn {
     box-shadow: 0px 2px 19px 0px #bbbbbb;
     border-radius: .5em;
     background: #ffedf900;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all .4s ease-in-out;
+}
+
+.recipies_card:hover {
+    box-shadow: none;
 }
 
 .card_img img {
@@ -213,6 +219,7 @@ a.btn {
     box-shadow: none !important;
     border-radius: 10px 30px 30px 10px !important;
     transition: all .4s cubic-bezier(0.75, -0.17, 1, 1);
+    padding: 1rem 3rem !important;
 }
 
 .order_btn:hover {
@@ -250,18 +257,19 @@ a.btn {
 
 @media screen and (max-width: 610px) {
     .two_recipies {
-            flex-direction: column;
-            gap: 4rem;
-        }
-    
-        .recipies_card {
-            width: 100% !important;
-        }
-        .counter {
-            flex-direction: column;
-            align-items: center;
-            gap: 3rem;
-        }
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .recipies_card {
+        width: 100% !important;
+    }
+
+    .counter {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
 }
 
 /* Recipies seciton end */
@@ -275,8 +283,9 @@ footer {
     text-align: center;
     padding-bottom: 5rem;
 }
+
 footer h1 {
-    color: #5e5e5e ;
+    color: #5e5e5e;
 }
 
 footer p {
