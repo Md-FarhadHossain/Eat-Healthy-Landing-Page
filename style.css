@@ -152,6 +152,7 @@ a.btn {
     .aobut_right {
         width: 100% !important;
         text-align: center;
+        padding-bottom: 4rem;
     }
 
     .about_left {
@@ -169,7 +170,7 @@ a.btn {
 
 /* Recipies seciton */
 #recipies {
-    background-image: url('img/frame-4.jpg');
+    /* background-image: url('img/frame-4.jpg'); */
     background-size: cover;
 }
 
@@ -232,4 +233,56 @@ a.btn {
     margin-bottom: 5rem;
 }
 
+.counter {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    box-shadow: 0px 0px 19px #cbcbcb;
+    margin: 6rem 0;
+    padding: 3rem 0;
+    border-radius: 1em;
+}
+
+.count h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 610px) {
+    .two_recipies {
+            flex-direction: column;
+            gap: 4rem;
+        }
+    
+        .recipies_card {
+            width: 100% !important;
+        }
+        .counter {
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+}
+
 /* Recipies seciton end */
+
+
+/* Footer */
+footer {
+    padding-top: 3rem;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+footer h1 {
+    color: #5e5e5e ;
+}
+
+footer p {
+    margin: 1rem;
+}
+
+footer span {
+    color: orange;
+}
